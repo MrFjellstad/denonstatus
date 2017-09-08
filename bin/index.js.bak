@@ -1,0 +1,35 @@
+const Denon = require('denon-avr');
+const bunyan = require('bunyan');
+const config = require('./config');
+
+const log = bunyan.createLogger({ name: 'SonosRemote' });
+
+const avr = new Denon(new Denon.transports.telnet({
+  host: config.get('reciever'), // IP address or hostname
+  debug: true, // Debug enabled
+}));
+console.log('Hei ' + config.get('reciever'));
+avr.on('connect', () => {
+    console.log('Connected');
+  // now connected
+  // all commands to be placed here
+  avr.send('PW?', 'PW', (err, state) => {
+    if (err) {
+      log(err);
+      return;
+    }
+
+    console.log(state);
+
+    log('The current power state is:', state);
+  }, 'Unable to get the power state');
+});
+
+avr.getPowerState(function(err, state) {
+  if(err) {
+      console.log(err);
+      return;
+    }
+
+    console.log('The power state is:', state);
+});

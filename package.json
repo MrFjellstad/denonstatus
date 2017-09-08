@@ -1,0 +1,22 @@
+{
+  "name": "denon",
+  "version": "1.0.0",
+  "description": "Denon remote",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kent Fjellstad",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "convict": "^4.0.0",
+    "denon-client": "^0.2.2",
+    "eslint": "^4.5.0",
+    "hapi": "^16.5.2"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
