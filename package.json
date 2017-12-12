@@ -13,7 +13,8 @@
     "bunyan": "^1.8.12",
     "convict": "^4.0.0",
     "denon-client": "^0.2.2",
-    "hapi": "^16.5.2"
+    "eslint": "^4.5.0",
+    "hapi": "^17.0.2"
   },
   "devDependencies": {
     "eslint": "^4.7.2",
