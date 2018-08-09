@@ -1,6 +1,6 @@
 const Hapi = require('hapi');
-const config = require('./config');
 const Denon = require('denon-client');
+const config = require('./config');
 
 const DenonAVRHost = config.get('reciever');
 
