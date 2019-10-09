@@ -10,15 +10,15 @@
   "author": "Kent Fjellstad",
   "license": "ISC",
   "dependencies": {
+    "@hapi/hapi": "^18.1.0",
     "bunyan": "^1.8.12",
     "convict": "^4.3.2",
-    "denon-client": "^0.2.2",
-    "hapi": "^17.0.2"
+    "denon-client": "^0.2.2"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "tap": "^12.0.1"
+    "tap": "^14.6.9"
   }
 }
