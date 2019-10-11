@@ -5,14 +5,15 @@
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint bin"
+    "lint": "eslint bin",
+    "start": "node bin/index.js"
   },
   "author": "Kent Fjellstad",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^18.1.0",
     "bunyan": "^1.8.12",
-    "convict": "^4.3.2",
+    "convict": "^5.1.0",
     "denon-client": "^0.2.2"
   },
   "devDependencies": {

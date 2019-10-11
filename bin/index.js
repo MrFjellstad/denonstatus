@@ -41,65 +41,56 @@ denonClient.connect().then(() => denonClient.getPower())
         console.error(error); // eslint-disable-line
     });
 
+const init = async () => {
+    const server = Hapi.Server({
+        port: config.get('port'),
+        host: 'localhost',
+    });
 
-const server = new Hapi.Server();
-
-server.connection({
-    port: config.get('port'),
-});
-
-
-server.route([
-    {
-        method: 'GET',
-        path: '/',
-        handler: (request, reply) => {
-            reply('Denon status API');
+    server.route([
+        {
+            method: 'GET',
+            path: '/',
+            handler: () => 'Denon status API',
         },
-    },
-    {
-        method: 'GET',
-        path: '/power',
-        handler: (request, reply) => {
-            reply({
+        {
+            method: 'GET',
+            path: '/power',
+            handler: () => ({
                 power: powerStatus,
-            });
+            }),
         },
-    },
-    {
-        method: 'GET',
-        path: '/input',
-        handler: (request, reply) => {
-            reply({
+        {
+            method: 'GET',
+            path: '/input',
+            handler: () => ({
                 input: inputStatus,
-            });
+            }),
         },
-    },
-    {
-        method: 'GET',
-        path: '/volume',
-        handler: (request, reply) => {
-            reply({
+        {
+            method: 'GET',
+            path: '/volume',
+            handler: () => ({
                 volume: currentVolume,
-            });
+            }),
         },
-    },
-    {
-        method: 'GET',
-        path: '/status',
-        handler: (request, reply) => {
-            reply({
+        {
+            method: 'GET',
+            path: '/status',
+            handler: () => ({
                 power: powerStatus,
                 input: inputStatus,
                 volume: currentVolume,
-            });
+            }),
         },
-    },
-]);
+    ]);
 
-server.start((err) => {
-    if (err) {
-        throw err;
-    }
-    console.log(`Server running on port ${config.get('port')}`); // eslint-disable-line
-});
+    server.start((err) => {
+        if (err) {
+            throw err;
+        }
+        console.log(`Server running on port ${config.get('port')}`); // eslint-disable-line
+    });
+};
+
+init();
