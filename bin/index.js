@@ -1,4 +1,4 @@
-const Hapi = require('hapi');
+const Hapi = require('@hapi/hapi');
 const Denon = require('denon-client');
 const config = require('./config');
 
