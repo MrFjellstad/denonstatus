@@ -20,6 +20,6 @@
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "tap": "^14.6.9"
+    "tap": "^14.10.4"
   }
 }
