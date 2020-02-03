@@ -11,7 +11,7 @@
   "author": "Kent Fjellstad",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.1.0",
+    "@hapi/hapi": "^19.1.0",
     "bunyan": "^1.8.12",
     "convict": "^5.1.0",
     "denon-client": "^0.2.2"
