@@ -13,17 +13,17 @@
   "author": "Kent Fjellstad",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.1.0",
-    "bunyan": "^1.8.12",
-    "convict": "^5.1.0",
+    "@hapi/hapi": "^19.2.0",
+    "bunyan": "^1.8.13",
+    "convict": "^6.0.0",
     "denon-client": "^0.2.2",
     "snyk": "^1.316.1"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "tap": "^14.6.9"
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "tap": "^14.10.8"
   },
   "snyk": true
 }
