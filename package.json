@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^19.0.0",
-    "bunyan": "^1.8.12",
-    "convict": "^5.1.0",
+    "bunyan": "^1.8.13",
+    "convict": "^6.0.0",
     "denon-client": "^0.2.2"
   },
   "devDependencies": {
