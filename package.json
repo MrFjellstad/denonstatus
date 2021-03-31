@@ -17,7 +17,7 @@
     "bunyan": "^1.8.13",
     "convict": "^6.0.0",
     "denon-client": "^0.2.2",
-    "snyk": "^1.425.4"
+    "snyk": "^1.518.0"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
