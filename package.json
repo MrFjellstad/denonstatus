@@ -15,7 +15,7 @@
   "dependencies": {
     "@hapi/hapi": "^20.0.0",
     "bunyan": "^1.8.13",
-    "convict": "^6.2.4",
+    "convict": "^6.2.5",
     "denon-client": "^0.2.2",
     "snyk": "^1.1297.3"
   },
