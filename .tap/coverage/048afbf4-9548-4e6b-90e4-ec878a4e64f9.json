@@ -1,0 +1,23 @@
+{
+  "result": [
+    {
+      "scriptId": "636",
+      "url": "file:///home/runner/work/denonstatus/denonstatus/bin/config.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 695,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 2633.705827,
+  "source-map-cache": {}
+}

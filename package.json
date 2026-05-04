@@ -4,7 +4,7 @@
   "description": "Denon remote",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
+    "test": "NODE_ENV=test tap test/*.test.js",
     "lint": "eslint bin",
     "start": "node bin/index.js",
     "snyk-protect": "snyk protect",
