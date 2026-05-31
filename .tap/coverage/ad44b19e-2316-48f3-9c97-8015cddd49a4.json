@@ -1,0 +1,106 @@
+{
+  "result": [
+    {
+      "scriptId": "636",
+      "url": "file:///home/runner/work/denonstatus/denonstatus/bin/server.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 1130,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "createServer",
+          "ranges": [
+            {
+              "startOffset": 94,
+              "endOffset": 1092,
+              "count": 11
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "handler",
+          "ranges": [
+            {
+              "startOffset": 316,
+              "endOffset": 340,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "handler",
+          "ranges": [
+            {
+              "startOffset": 439,
+              "endOffset": 498,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "handler",
+          "ranges": [
+            {
+              "startOffset": 597,
+              "endOffset": 656,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "handler",
+          "ranges": [
+            {
+              "startOffset": 756,
+              "endOffset": 817,
+              "count": 2
+            }
+          ],
+          "isBlockCoverage": true
+        },
+        {
+          "functionName": "handler",
+          "ranges": [
+            {
+              "startOffset": 917,
+              "endOffset": 1050,
+              "count": 4
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    },
+    {
+      "scriptId": "767",
+      "url": "file:///home/runner/work/denonstatus/denonstatus/bin/config.js",
+      "functions": [
+        {
+          "functionName": "",
+          "ranges": [
+            {
+              "startOffset": 0,
+              "endOffset": 695,
+              "count": 1
+            }
+          ],
+          "isBlockCoverage": true
+        }
+      ]
+    }
+  ],
+  "timestamp": 2633.92297,
+  "source-map-cache": {}
+}

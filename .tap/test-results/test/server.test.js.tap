@@ -1,0 +1,67 @@
+TAP version 14
+# Subtest: GET / returns info message
+    ok 1 - should be equal
+    ok 2 - should be equal
+    1..2
+ok 1 - GET / returns info message # time=42.66ms
+
+# Subtest: GET /power returns power status
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 2 - GET /power returns power status # time=9.93ms
+
+# Subtest: GET /power returns undefined when power not yet received
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 3 - GET /power returns undefined when power not yet received # time=8.152ms
+
+# Subtest: GET /input returns input status
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 4 - GET /input returns input status # time=6.939ms
+
+# Subtest: GET /input returns undefined when input not yet received
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 5 - GET /input returns undefined when input not yet received # time=8.218ms
+
+# Subtest: GET /volume returns current volume
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 6 - GET /volume returns current volume # time=8.034ms
+
+# Subtest: GET /volume returns undefined when volume not yet received
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 7 - GET /volume returns undefined when volume not yet received # time=6.56ms
+
+# Subtest: GET /status returns all state fields
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 8 - GET /status returns all state fields # time=8.718ms
+
+# Subtest: GET /status reflects live state mutations
+    ok 1 - should be equivalent
+    ok 2 - should be equivalent
+    1..2
+ok 9 - GET /status reflects live state mutations # time=6.542ms
+
+# Subtest: GET /status returns undefined fields when state is empty
+    ok 1 - should be equal
+    ok 2 - should be equivalent
+    1..2
+ok 10 - GET /status returns undefined fields when state is empty # time=7.706ms
+
+# Subtest: unknown route returns 404
+    ok 1 - should be equal
+    1..1
+ok 11 - unknown route returns 404 # time=7.514ms
+
+1..11
