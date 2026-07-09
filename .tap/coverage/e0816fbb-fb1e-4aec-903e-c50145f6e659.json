@@ -84,7 +84,7 @@
       ]
     },
     {
-      "scriptId": "767",
+      "scriptId": "766",
       "url": "file:///home/runner/work/denonstatus/denonstatus/bin/config.js",
       "functions": [
         {
@@ -101,6 +101,6 @@
       ]
     }
   ],
-  "timestamp": 2633.92297,
+  "timestamp": 246.141552,
   "source-map-cache": {}
 }
