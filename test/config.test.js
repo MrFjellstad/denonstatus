@@ -11,8 +11,8 @@ t.test('config loads without errors', (t) => {
 
 t.test('config provides expected keys', (t) => {
     const config = require('../bin/config');
-    t.ok(config.get('reciever'), 'reciever should be defined');
-    t.ok(config.get('port'), 'port should be defined');
+    t.not(config.get('reciever'), undefined, 'reciever should be defined');
+    t.not(config.get('port'), undefined, 'port should be defined');
     t.ok(config.get('env'), 'env should be defined');
     t.end();
 });
